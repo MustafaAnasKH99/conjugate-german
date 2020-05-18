@@ -36,3 +36,115 @@
     transform: rotate(360deg);
   }
 }
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+height: 100%;
+}
+
+.flex-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-height: 100%;
+}
+
+.row{
+  /* padding: 0px 300px 0px 0px; */
+  margin: 0 auto;
+}
+
+.app-title{
+  margin: 5px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  font-weight: 800;
+  font-size: 3.75em;
+  font-family: 'Raleway', Arial, sans-serif;
+  min-width: 100%;
+  padding: 15px;
+  color: #4e4a46;
+}
+
+.verbs-conjugated{
+
+} 
+
+
+p{
+  font-weight: 800;
+  font-size: 30px;
+  color: #fffce1;
+} 
+
+.wrap-verbs-listing{
+  display: grid;
+  grid-template-columns: auto auto;
+  max-width: 1200px;
+  margin: 0 auto;
+  grid-gap: 1em;
+}
+
+@media (min-width: 600px) {
+  .wrap-verbs-listing { grid-template-columns: repeat(3, 1fr); }
+}
+
+li{
+  padding: 35px;
+}
+
+li{
+  font-family: 'Raleway', Arial, sans-serif;
+  font-weight: 100;
+  background-color: #fffce1;
+  box-sizing: border-box;
+  border-top-left-radius: 20px 50px;
+  border-top-right-radius: 20px 50px;
+  border-bottom-right-radius: 20px 50px;
+  border-bottom-left-radius: 20px 50px;
+
+  cursor: pointer;
+} 
+
+.verbtxt{
+  font-weight: 800;
+}
+
+.verbtxt:hover{
+  /* background-color: red; */
+  color: #c94e50;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.sticky-footer{
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  bottom: 5px;
+}
+
+a{
+  border-bottom: 0.5px white solid;
+  color: #c94e50;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.verbs-conjugated-loader{
+  position: fixed;
+  width: 1000px;
+  margin: 0 auto;
+  display: inline-block;
+  padding-top: 150px;
+}
+
+.white-bg{
+  background-color: #fff;
+}
