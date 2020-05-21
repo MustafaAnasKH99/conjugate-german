@@ -74,6 +74,23 @@ height: 100%;
 
 } 
 
+.examples-container-2{
+  display: flex;
+}
+
+.examples-container-1{
+  display: grid;
+  flex-wrap: nowrap;
+  text-align: left;
+  justify-content: center;
+}
+
+.examples-sentences{
+  font-weight: 800;
+  text-align: center;
+  color: #212529;
+  font-family: 'Courier New';
+}
 
 p{
   font-weight: 800;
@@ -128,6 +145,8 @@ ul{
   width: 100%;
   position: fixed;
   bottom: 5px;
+  text-align: right;
+  padding-right: 5px;
 }
 
 a{

@@ -27,6 +27,9 @@ export default class CollapseHowTo extends React.Component {
             <span>
                 Use the green button below to change the verb tense.
             </span>
+            <span>
+                You can also get example sentences. Try the Example button below.
+            </span>
           </div>
         </Collapse>
       </div>

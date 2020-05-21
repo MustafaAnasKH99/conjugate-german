@@ -10,13 +10,8 @@ class Examples extends Component {
         console.log('sentences_arr')
         console.log(examples)
         return(
-            <div style={{width: '100%', marginTop: '15px'}}>
-                <h1>Something</h1>
+            <div style={{width: '100%', marginTop: '15px', paddingTop: '25px'}}>
                 <ToggleExample examples={examples} />
-                {/* <h2>{examples[Math.floor((Math.random() * examples.length) + 1)]}</h2> */}
-                {/* {
-                    sentences_arr.map(item => <span>{item}</span>)
-                } */}
             </div>
         )
     }
@@ -24,14 +19,3 @@ class Examples extends Component {
 
 
 export default Examples
-// const Examples = async ( examples ) => {
-//     useEffect(() => {
-        
-//     }, [examples]);
-//     return(
-//         <div style={{width: '100%', marginTop: '15px'}}>
-//             <h1>Something</h1>
-//         </div>
-//     )
-
-// }
