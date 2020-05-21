@@ -1,14 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Verb from './Verb'
-import DropdownClearable from './DropdownClearable';
-import Sidebar from './Sidebar'
 import CommonVerbs from './CommonVerbs'
 import InputVerb from './InputVerb'
 import CollapseHowTo from './CollapseHowTo';
 import SideBar from './slide'
-import Examples from './Examples'
 import './slide.css'
 
 import { Container, Row, Col } from "shards-react";

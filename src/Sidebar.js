@@ -14,8 +14,6 @@ const Sidebar = ({ width, height, children }) => {
     }
   };
 
-  // toggleMenu()
-
   React.useEffect(() => {
     setX(0);
   }, []);

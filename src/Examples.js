@@ -1,6 +1,3 @@
-// import React, { useState, useEffect } from 'react';
-
-
 import React, { Component } from 'react'
 import ToggleExample from './ToggleExample'
 
