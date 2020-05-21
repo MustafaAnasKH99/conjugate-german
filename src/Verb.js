@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { RingLoader } from 'react-spinners';
+import Examples from './Examples'
 
 import './App.css';
 
@@ -13,7 +14,6 @@ const Verb = ({ passed_verb, passed_tense }) => {
     verb: passed_verb
   }
   async function fetchData(){
-    loading ? setLoading(false) : setLoading(true)
     const res = await fetch('http://localhost:5555/conjugate', {
       method: "POST",
       body: JSON.stringify(something)
@@ -21,8 +21,8 @@ const Verb = ({ passed_verb, passed_tense }) => {
     res
     .json()
     .then(res => {
-        setData(res);
-        setLoading(false)
+      setData(res);
+      setLoading(false)
     })
     .catch(err => setErrors(err));
   }
@@ -32,7 +32,6 @@ const Verb = ({ passed_verb, passed_tense }) => {
     fetchData()
   }, [passed_verb, passed_tense]);
 
-  {console.log(JSON.stringify(data))}
   if(loading === true){
     return (
       <div className="verbs-conjugated-loader">
@@ -40,13 +39,14 @@ const Verb = ({ passed_verb, passed_tense }) => {
       </div>
     )      
   } else if (hasError !== false){
-    return <h2>Soeery, something went wrong. Try again at a later time</h2>
+    return <h2>Sorry, something went wrong. Please try again at a later time</h2>
   } else {
     return (
       <div>
-        <div className="verbs-conjugated" dangerouslySetInnerHTML={{ __html: data.html }} />
+        <Examples examples={data.examples} />
+        <div className="verbs-conjugated" dangerouslySetInnerHTML={{ __html: data.verbs.html }} />
       </div>
-      );
+    )
   }
 }
 

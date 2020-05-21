@@ -8,6 +8,7 @@ import CommonVerbs from './CommonVerbs'
 import InputVerb from './InputVerb'
 import CollapseHowTo from './CollapseHowTo';
 import SideBar from './slide'
+import Examples from './Examples'
 import './slide.css'
 
 import { Container, Row, Col } from "shards-react";
@@ -17,7 +18,6 @@ function App() {
   const [passed_tense, setTense] = useState("Präsens");
 
   return (
-    // <Container>
       <div id="App">
           <SideBar pageWrapId={"page-wrap"} outerContainerId={"App"}>
             <CommonVerbs setVerb={setVerb} />
@@ -50,6 +50,7 @@ function App() {
                   
                   { console.log('passed_verb') }
                   { console.log(passed_verb) }
+                  {/* <Examples passed_verb={passed_verb} /> */}
                   <Verb passed_verb={passed_verb} passed_tense={passed_tense} />
                 </div>
               </Col>
