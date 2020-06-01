@@ -10,13 +10,13 @@ import './slide.css'
 import { Container, Row, Col } from "shards-react";
 import ReactGA from 'react-ga';
 
-const trackingId = "UA-168104349-1"; // Replace with your Google Analytics tracking ID
-ReactGA.initialize(trackingId);
-ReactGA.pageview(window.location.pathname + window.location.search);
-
 
 
 function App() {
+  const trackingId = "UA-168104349-1"; // Replace with your Google Analytics tracking ID
+  ReactGA.initialize(trackingId);
+  ReactGA.pageview(window.location.pathname + window.location.search);
+
   const [passed_verb, setVerb] = useState("tanzen");
   const [passed_tense, setTense] = useState("Präsens");
 
