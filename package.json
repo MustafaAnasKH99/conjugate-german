@@ -10,6 +10,7 @@
     "react-burger-menu": "^2.6.13",
     "react-dom": "^16.13.1",
     "react-easy-emoji": "^1.4.0",
+    "react-ga": "^2.7.0",
     "react-scripts": "3.4.1",
     "react-spinners": "^0.8.3",
     "semantic-ui-react": "^0.88.2",

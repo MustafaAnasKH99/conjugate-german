@@ -8,6 +8,11 @@ import SideBar from './slide'
 import './slide.css'
 
 import { Container, Row, Col } from "shards-react";
+import ReactGA from 'react-ga';
+
+const trackingId = "UA-168104349-1"; // Replace with your Google Analytics tracking ID
+ReactGA.initialize(trackingId);
+
 
 function App() {
   const [passed_verb, setVerb] = useState("tanzen");
