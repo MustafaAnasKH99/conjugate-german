@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Conjugate German",
+  "name": "conjugate german verbs in different tenses and get sentence examples for their usage with English translation",
   "icons": [
     {
       "src": "favicon.ico",
