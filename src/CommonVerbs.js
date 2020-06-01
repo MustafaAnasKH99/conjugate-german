@@ -41,9 +41,14 @@ const CommonVerbs = ({ setVerb }) => {
         <div className="verbs-container">
             <h3 style={{color: '#17c671'}}>Common German Verbs { emoji('😻 🢃') } </h3>
         { 
-          JSON.parse(common_data.html).map((el, index) => (
-            <p key={index} onClick={() => setVerb(el)}>{el}</p>
-          ))
+          JSON.parse(common_data.html).map((el, index) => {
+            if (index === 0){
+              {/* removing the infinativ word */}
+              return <p></p>
+            } else {
+              return <p key={index} onClick={() => setVerb(el)}>{el}</p>
+            }
+          })
         }
         </div>
       );
