@@ -14,7 +14,7 @@ const Verb = ({ passed_verb, passed_tense }) => {
     verb: passed_verb
   }
   async function fetchData(){
-    const res = await fetch('http://localhost:5555/conjugate', {
+    const res = await fetch('https://aqueous-scrubland-30732.herokuapp.com/conjugate', {
       method: "POST",
       body: JSON.stringify(something)
     });

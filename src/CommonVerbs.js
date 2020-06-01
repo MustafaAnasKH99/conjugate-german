@@ -12,7 +12,7 @@ const CommonVerbs = ({ setVerb }) => {
   const [common_data, setCommonData] = useState({});
 
   async function fetchData(){
-    const resVerbs = await fetch('http://localhost:5555/common-verbs', {
+    const resVerbs = await fetch('https://aqueous-scrubland-30732.herokuapp.com/common-verbs', {
       method: "POST",
     });
     resVerbs
