@@ -20,8 +20,8 @@ function App() {
   const [passed_tense, setTense] = useState("Präsens");
 
   useEffect(() => {
-    ReactGA.set({ page: location.pathname });
-    ReactGA.pageview(location.pathname)
+    ReactGA.set({ page: window.location.pathname });
+    ReactGA.pageview(window.location.pathname)
   }, []);
 
   return (
