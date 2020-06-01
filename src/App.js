@@ -16,11 +16,13 @@ ReactGA.pageview(window.location.pathname + window.location.search);
 
 
 function App() {
-  ReactGA.set({ page: location.pathname });
-  ReactGA.pageview(location.pathname)
-
   const [passed_verb, setVerb] = useState("tanzen");
   const [passed_tense, setTense] = useState("Präsens");
+
+  useEffect(() => {
+    ReactGA.set({ page: location.pathname });
+    ReactGA.pageview(location.pathname)
+  }, []);
 
   return (
       <div id="App">
