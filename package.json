@@ -37,7 +37,7 @@
       "last 1 safari version"
     ]
   },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "description": "Conjugate German is an easy way for you to conjugate german verbs in different tenses and get random sentence examples with their english translation",
   "main": "index.js",
   "devDependencies": {},
   "author": "Mustafa Anas",
