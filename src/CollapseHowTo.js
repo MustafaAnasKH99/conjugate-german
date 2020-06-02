@@ -28,7 +28,7 @@ export default class CollapseHowTo extends React.Component {
                 To change the verb tense, you can use the green button next to the input field.
             </span>
             <span>
-                You can also get random examples for how to use the verb in a sentence, along with an English translation. Press the Example button to get new ssetneces.
+                You can also get random examples for how to use the verb in a sentence, along with an English translation. Press the Example button to get new setneces.
             </span>
           </div>
         </Collapse>
