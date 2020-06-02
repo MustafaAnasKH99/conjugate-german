@@ -5,10 +5,12 @@ This provides an easy way for you to conjugate German verbs in different tenses 
 These instructions will clone the project to your local machine and run this project locally. You can checkout [the deployed version here](https://www.conjugate-german.com/).
 
 ### Prerequisites
-To run this project locally, you need to have the following installed.
+To run this project locally, you need to have the following installed:
+```
     1. React.js
     2. Node.js
     3. npm 
+```
 
 ### Installing
 Clone the repository
