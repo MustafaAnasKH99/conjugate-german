@@ -21,14 +21,14 @@ export default class CollapseHowTo extends React.Component {
           <div className="p-3 mt-3 border rounded white-bg">
             <h5>This helps you conjugate German verbs 😍!</h5>
             <span>
-              Use the text input above to enter the german verb you want to conjugate.
-              Currently, only present, past, and future "Indicative" is available.
+              You can use the text input below to enter the german verb you want to conjugate.
+              Currently, only present, past, and future "Indicative" tenses are available.
             </span>
             <span>
-                Use the green button below to change the verb tense.
+                To change the verb tense, you can use the green button next to the input field.
             </span>
             <span>
-                You can also get example sentences. Try the Example button below.
+                You can also get random examples for how to use the verb in a sentence, along with an English translation. Press the Example button to get new ssetneces.
             </span>
           </div>
         </Collapse>
