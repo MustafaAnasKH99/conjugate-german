@@ -6,9 +6,9 @@ These instructions will clone the project to your local machine and run this pro
 
 ### Prerequisites
 To run this project locally, you need to have the following installed.
-    - React.js
-    - Node.js
-    - npm 
+    1. React.js
+    2. Node.js
+    3. npm 
 
 ### Installing
 Clone the repository
@@ -28,7 +28,7 @@ Please feel free to clone this project, do the edits you see fit, then send us a
 You can also ask for new features by opening an issue and explaining what it is you would like to see in this site.
 
 ## Authors
-    - [Mustafa Anas](https://twitter.com/MustafaAnas99)
+    - Mustafa Anas
 
 ## License
 This project is licensed under the MIT License.
