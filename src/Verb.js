@@ -28,7 +28,6 @@ const Verb = ({ passed_verb, passed_tense }) => {
   }
 
   useEffect(() => {
-    console.log('component updated')
     fetchData()
   }, [passed_verb, passed_tense]);
 

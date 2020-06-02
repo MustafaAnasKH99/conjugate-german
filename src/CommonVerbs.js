@@ -18,7 +18,6 @@ const CommonVerbs = ({ setVerb }) => {
     resVerbs
     .json()
     .then(res => {
-        console.log('res')
         setCommonData(res)
         setLoading(false)
     })

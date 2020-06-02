@@ -8,8 +8,6 @@ const Sidebar = ({ width, height, children }) => {
     if (xPosition < 0) {
       setX(0);
     } else {
-      console.log('moving')
-      console.log(-width)
       setX(-width);
     }
   };
