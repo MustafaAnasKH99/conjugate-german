@@ -15,11 +15,6 @@ function App() {
   const [passed_verb, setVerb] = useState("tanzen");
   const [passed_tense, setTense] = useState("Präsens");
 
-  // useEffect(() => {
-  //   ReactGA.set({ page: window.location.pathname });
-  //   ReactGA.pageview(window.location.pathname)
-  // }, []);
-
   return (
       <div id="App">
           {
@@ -35,7 +30,7 @@ function App() {
           <Row>
 
           <Col sm='12' lg='12'>
-            <h1 className="app-title">Conjugate German 🇩🇪</h1>
+            <h1 className="app-title">Conjugate German <span role="img" aria-label="DE-flag">🇩🇪</span></h1>
           </Col>
           </Row>
             <Row>
@@ -56,8 +51,8 @@ function App() {
               <Col>
                 <div className="main-content">
                   
-                  { console.log('passed_verb') }
-                  { console.log(passed_verb) }
+                  {/* { console.log('passed_verb') }
+                  { console.log(passed_verb) } */}
                   {/* <Examples passed_verb={passed_verb} /> */}
                   <Verb passed_verb={passed_verb} passed_tense={passed_tense} />
                 </div>
