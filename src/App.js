@@ -10,22 +10,23 @@ import './slide.css'
 import { Container, Row, Col } from "shards-react";
 import ReactGA from 'react-ga';
 
-const trackingId = "UA-168104349-1"; // Replace with your Google Analytics tracking ID
-ReactGA.initialize(trackingId);
-ReactGA.pageview(window.location.pathname + window.location.search);
-
 
 function App() {
   const [passed_verb, setVerb] = useState("tanzen");
   const [passed_tense, setTense] = useState("Präsens");
 
-  useEffect(() => {
-    ReactGA.set({ page: window.location.pathname });
-    ReactGA.pageview(window.location.pathname)
-  }, []);
+  // useEffect(() => {
+  //   ReactGA.set({ page: window.location.pathname });
+  //   ReactGA.pageview(window.location.pathname)
+  // }, []);
 
   return (
       <div id="App">
+          {
+            ReactGA.initialize('UA-168104349-1') &&
+            ReactGA.set({ page: window.location.pathname }) &&
+            ReactGA.pageview(window.location.pathname + window.location.search)
+          }
           <SideBar pageWrapId={"page-wrap"} outerContainerId={"App"}>
             <CommonVerbs setVerb={setVerb} />
           </SideBar>
